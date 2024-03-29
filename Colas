@@ -1,0 +1,27 @@
+package jv.sisl.lista;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class colas {
+	
+	public static void main(String[] args) {
+		Queue<String> clientes = new LinkedList<>();
+
+        // Agregar clientes a la cola
+        clientes.offer("Cliente 1");
+        clientes.offer("Cliente 2");
+        clientes.offer("Cliente 3");
+        clientes.offer("Cliente 4");
+        clientes.offer("Cliente 5");
+
+        System.out.println("Atendiendo a los clientes:");
+
+        // Atender a los clientes en orden de llegada
+        while (!clientes.isEmpty()) {
+            String cliente = clientes.poll();
+            System.out.println("Atendiendo a: " + cliente);
+           
+            }
+        }
+	}
